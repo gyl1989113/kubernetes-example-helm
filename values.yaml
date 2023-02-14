@@ -1,0 +1,16 @@
+frontend:
+  image: gyl1989113/frontend
+  tag: '1276e23'
+  autoscaling:
+    averageUtilization: 90
+backend:
+  image: gyl1989113/backend
+  tag: '1276e23'
+  autoscaling:
+    averageUtilization: 90
+database:
+  enabled: true
+  uri: pg-service
+  username: postgres
+  password: postgres
+  
